@@ -10,7 +10,7 @@ License: [Beerware](https://en.wikipedia.org/wiki/Beerware)
 
 Backend API for the [Cartoons! By John app](https://appsto.re/au/OKBL1.i), written in [Express.js](http://expressjs.com/)
 
-## Install
+## Setup
 
 ### OS X
 
@@ -19,24 +19,16 @@ Backend API for the [Cartoons! By John app](https://appsto.re/au/OKBL1.i), writt
 3. Start API: `npm start`
 4. Ensure API is working: `curl "http://localhost:3000/videos"`
 
-Run as process with [PM2](http://pm2.keymetrics.io/) -
-
-`pm2 start app.js`
+Run as process with [PM2](http://pm2.keymetrics.io/): `pm2 start app.js`
 
 ## Testing
 
-Using [Mocha](http://mochajs.org/) and [Chai](http://chaijs.com/) -
-
-`npm test`
+Using [Mocha](http://mochajs.org/) and [Chai](http://chaijs.com/): `npm test`
 
 ### Coverage
 
-Using [Istanbul](https://github.com/gotwarlost/istanbul) -
-
-`npm run cover`
+Using [Istanbul](https://github.com/gotwarlost/istanbul) and [Coveralls](https://coveralls.io/): `npm run cover`
 
 ### Lint
 
-Using [ESLint](http://eslint.org/) -
-
-`npm run lint`
+Using [ESLint](http://eslint.org/): `npm run lint`
