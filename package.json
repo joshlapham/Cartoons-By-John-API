@@ -23,7 +23,8 @@
     "errorhandler": "1.1.1",
     "express": "4.8.0",
     "mysql": "2.10.2",
-    "winston": "2.2.0"
+    "winston": "2.2.0",
+    "compression": "1.6.2"
   },
   "devDependencies": {
     "chai": "3.5.0",

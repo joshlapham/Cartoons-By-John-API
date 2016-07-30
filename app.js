@@ -4,14 +4,20 @@ var errorHandler = require('errorhandler')
 var bodyParser = require('body-parser')
 var logger = require('./logger.js')
 var cors = require('cors')
-var app = express()
+var compression = require('compression')
+var helmet = require('helmet')
 
+var app = express()
 var db = require('./db')
 
-// All environments
 app.set('port', process.env.PORT || 3000)
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(compression())
+
+// Disable certain HTTP headers
+app.disable('x-powered-by')
 
 // CORs
 var corsOptions = {
