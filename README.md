@@ -13,10 +13,9 @@ Backend API for the [Cartoons! By John app](https://appsto.re/au/OKBL1.i), writt
 ### OS X
 
 1. Install [Node.js](http://nodejs.org/): `brew install nodejs`
-2. Install [Bower](https://bower.io/): `npm install -h bower`
-3. Install project dependencies from `package.json`: `npm install`
-4. Start API: `npm start`
-5. Ensure API is working: `curl "http://localhost:3000/videos"`
+2. Install project dependencies from `package.json`: `npm install`
+3. Start API: `npm start`
+4. Ensure API is working: `curl "http://localhost:3000/videos"`
 
 Run as process with [PM2](http://pm2.keymetrics.io/) -
 
