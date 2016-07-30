@@ -5,7 +5,6 @@ var bodyParser = require('body-parser')
 var logger = require('./logger.js')
 var cors = require('cors')
 var compression = require('compression')
-var helmet = require('helmet')
 
 var app = express()
 var db = require('./db')
