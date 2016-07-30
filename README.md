@@ -18,6 +18,14 @@ Backend API for the [Kidney John app](https://appsto.re/au/OKBL1.i), written in 
 4. Start API: `npm start`
 5. Ensure API is working: `curl "http://localhost:3000/videos"`
 
-## Run Tests
+## Testing
+
+Using [Mocha](http://mochajs.org/) and [Chai](http://chaijs.com/).
 
 `npm test`
+
+### Coverage
+
+Using [Istanbul](https://github.com/gotwarlost/istanbul).
+
+`npm run cover`
