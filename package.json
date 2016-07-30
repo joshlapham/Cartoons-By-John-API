@@ -1,7 +1,8 @@
 {
-  "name": "kidneyjohn-api",
+  "name": "cartoons-by-john-api",
   "version": "0.0.1",
-  "description": "Backend API for the Kidney John app",
+  "description": "Backend API for the Cartoons! By John app",
+  "website": "https://github.com/joshlapham/cartoons-by-john-api",
   "author": "Josh Lapham <josh@joshlapham.com>",
   "license": "Beerware",
 

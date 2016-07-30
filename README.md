@@ -1,4 +1,4 @@
-# Kidney John API
+# Cartoons! By John - API
 
 By Josh Lapham [josh@joshlapham.com]
 
@@ -6,7 +6,7 @@ License: [Beerware](https://en.wikipedia.org/wiki/Beerware)
 
 ## What This Is
 
-Backend API for the [Kidney John app](https://appsto.re/au/OKBL1.i), written in [Express.js](http://expressjs.com/)
+Backend API for the [Cartoons! By John app](https://appsto.re/au/OKBL1.i), written in [Express.js](http://expressjs.com/)
 
 ## Install
 
