@@ -1,5 +1,7 @@
 # Cartoons! By John - API
 
+[![Coverage Status](https://coveralls.io/repos/github/joshlapham/Cartoons-By-John-API/badge.svg?branch=master)](https://coveralls.io/github/joshlapham/Cartoons-By-John-API?branch=master)
+
 By Josh Lapham [josh@joshlapham.com]
 
 License: [Beerware](https://en.wikipedia.org/wiki/Beerware)
