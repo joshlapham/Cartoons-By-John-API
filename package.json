@@ -1,12 +1,23 @@
 {
   "name": "kidneyjohn-api",
-  "description": "Backend API for the Kidney John app",
   "version": "0.0.1",
-  "private": false,
+  "description": "Backend API for the Kidney John app",
+  "author": "Josh Lapham <josh@joshlapham.com>",
+  "license": "Beerware",
+
   "main": "app.js",
+
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node_modules/.bin/mocha tests/**"
   },
+
+  "keywords": [
+    "videos",
+    "node",
+    "express"
+  ],
+
   "dependencies": {
     "body-parser": "1.5.2",
     "cors": "2.5.2",
@@ -15,6 +26,7 @@
     "mysql": "2.10.2",
     "winston": "2.2.0"
   },
+
   "devDependencies": {
     "chai": "3.5.0",
     "mocha": "2.4.5",
