@@ -2,24 +2,21 @@
   "name": "cartoons-by-john-api",
   "version": "0.0.1",
   "description": "Backend API for the Cartoons! By John app",
-  "website": "https://github.com/joshlapham/Cartoons-By-John-API",
+  "repository": "https://github.com/joshlapham/Cartoons-By-John-API",
   "author": "Josh Lapham <josh@joshlapham.com>",
   "license": "Beerware",
-
   "main": "app.js",
-
   "scripts": {
     "start": "node app.js",
     "test": "node_modules/.bin/mocha tests/**",
-    "cover": "node_modules/.bin/istanbul cover tests/**"
+    "cover": "node_modules/.bin/istanbul cover tests/**",
+    "lint": "node_modules/.bin/eslint **"
   },
-
   "keywords": [
     "videos",
     "node",
     "express"
   ],
-
   "dependencies": {
     "body-parser": "1.5.2",
     "cors": "2.5.2",
@@ -28,11 +25,11 @@
     "mysql": "2.10.2",
     "winston": "2.2.0"
   },
-
   "devDependencies": {
     "chai": "3.5.0",
+    "eslint": "3.2.0",
+    "istanbul": "0.4.4",
     "mocha": "2.4.5",
-    "request": "2.70.0",
-    "istanbul": "0.4.4"
+    "request": "2.70.0"
   }
 }

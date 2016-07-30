@@ -5,7 +5,7 @@ var logger = require('../logger.js')
 Doodle = require('../models/doodle.js')
 
 router.get('/', function(req, res) {
-  logger.info("/doodles")
+  logger.info('/doodles')
 
   Doodle.getAll(function(err, doodles) {
     if (err) {

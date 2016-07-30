@@ -24,7 +24,7 @@ app.use(cors(corsOptions))
 app.use(require('./controllers'))
 
 // NOTE - this error handling middleware should be loaded after loading the routes (as above)
-if ('development' == app.get('env')) {
+if ('development' === app.get('env')) {
   app.use(errorHandler())
 }
 

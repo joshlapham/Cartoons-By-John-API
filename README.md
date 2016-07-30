@@ -18,18 +18,24 @@ Backend API for the [Cartoons! By John app](https://appsto.re/au/OKBL1.i), writt
 4. Start API: `npm start`
 5. Ensure API is working: `curl "http://localhost:3000/videos"`
 
-Run as process with [`pm2`](http://pm2.keymetrics.io/) -
+Run as process with [PM2](http://pm2.keymetrics.io/) -
 
 `pm2 start app.js`
 
 ## Testing
 
-Using [Mocha](http://mochajs.org/) and [Chai](http://chaijs.com/).
+Using [Mocha](http://mochajs.org/) and [Chai](http://chaijs.com/) -
 
 `npm test`
 
 ### Coverage
 
-Using [Istanbul](https://github.com/gotwarlost/istanbul).
+Using [Istanbul](https://github.com/gotwarlost/istanbul) -
 
 `npm run cover`
+
+### Lint
+
+Using [ESLint](http://eslint.org/) -
+
+`npm run lint`

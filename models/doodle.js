@@ -1,7 +1,7 @@
 var db = require('../db.js')
 
 function safeSQL() {
-  var sqlString = "SELECT image_url, instagram_id, date, image_id FROM doodles WHERE is_active=1 ORDER BY image_id"
+  var sqlString = 'SELECT image_url, instagram_id, date, image_id FROM doodles WHERE is_active=1 ORDER BY image_id'
   return sqlString
 }
 

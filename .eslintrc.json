@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "no-console": "error",
+    "curly": ["error", "all"],
+    "eqeqeq": ["error", "always"],
+    "no-empty-function": "error",
+    "no-eq-null": "error",
+    "no-loop-func": "error",
+    "no-redeclare": "error"
+  }
+}

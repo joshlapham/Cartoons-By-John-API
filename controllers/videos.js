@@ -5,7 +5,7 @@ var logger = require('../logger.js')
 Video = require('../models/video.js')
 
 router.get('/', function(req, res) {
-  logger.info("/videos")
+  logger.info('/videos')
 
   Video.getAll(function(err, videos) {
     if (err) {
