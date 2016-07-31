@@ -6,6 +6,7 @@ var app = require('../app')
 
 Comic = require('../models/comic.js')
 Doodle = require('../models/doodle.js')
+Link = require('../models/link.js')
 Video = require('../models/video.js')
 
 // Config server for tests
@@ -26,6 +27,14 @@ describe('Data models', function() {
     Doodle.getAll(function(err, doodles) {
       expect(err).to.equal(null)
       expect(doodles).to.not.equal(null)
+      done()
+    })
+  })
+
+  it('should call getAll method successfully for Links', function(done) {
+    Link.getAll(function(err, links) {
+      expect(err).to.equal(null)
+      expect(links).to.not.equal(null)
       done()
     })
   })
@@ -161,6 +170,69 @@ describe('Endpoints', function() {
     request({
       method: 'GET',
       uri: 'http://localhost:' + port + '/doodles'
+
+    }, function(err, response) {
+      if (err) {
+        done(err)
+      }
+
+      assert.equal(response.statusCode, 200)
+
+      var headers = response.headers
+
+      for (var key in headers) {
+        if (key === 'content-length') {
+          var content_length = headers[key]
+          assert.equal(content_length > 1, true)
+        }
+      }
+
+      done()
+    })
+  })
+
+  it('responds with 200 for /links endpoint', function(done) {
+    request({
+      method: 'GET',
+      uri: 'http://localhost:' + port + '/links'
+
+    }, function(err, response) {
+      if (err) {
+        done(err)
+      }
+
+      assert.equal(response.statusCode, 200)
+      done()
+    })
+  })
+
+  it('responds with JSON for /links endpoint', function(done) {
+    request({
+      method: 'GET',
+      uri: 'http://localhost:' + port + '/links'
+
+    }, function(err, response) {
+      if (err) {
+        done(err)
+      }
+
+      var headers = response.headers
+
+      for (var key in headers) {
+        if (key === 'content-type') {
+          var content_type = headers[key]
+          if (content_type.indexOf('application/json') > -1 === true) {
+            done()
+          }
+        }
+      }
+    })
+  })
+
+  it('returns at least one item for /links endpoint', function(done) {
+    request({
+      method: 'GET',
+      uri: 'http://localhost:' + port + '/links'
 
     }, function(err, response) {
       if (err) {

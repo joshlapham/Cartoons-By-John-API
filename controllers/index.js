@@ -3,6 +3,7 @@ var router = express.Router()
 
 router.use('/comics', require('./comics.js'))
 router.use('/doodles', require('./doodles.js'))
+router.use('/links', require('./links.js'))
 router.use('/videos', require('./videos.js'))
 
 module.exports = router
